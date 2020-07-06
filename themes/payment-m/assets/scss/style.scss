@@ -1,0 +1,187 @@
+/**
+ * Bootstrap
+ */
+// Bootstrap Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+/**
+ * Variables, override bootstrap variables
+ */
+@import "base/_variables";
+
+
+/**
+ * Bootstrap
+ */
+// Optional - comment what you doesn't need
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/input-group";
+@import "../../node_modules/bootstrap/scss/custom-forms";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/jumbotron";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/media";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/print";
+
+/**
+ * Vendors
+ */
+
+/**
+ * Base
+ */
+@import "base/_base";
+@import "base/_mixins";
+@import "base/_typography";
+
+
+/**
+ * Layout
+ */
+@import "layout/_grid";
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_sidebar";
+
+/**
+ * Modules
+ */
+
+/**
+ * Modules : form
+ */
+@import "modules/forms/_search";
+
+/**
+ * Modules : pages
+ */
+@import "modules/pages/_default";
+
+/**
+ * Modules ; posts
+ */
+@import "modules/posts/_archive";
+@import "modules/posts/_content";
+@import "modules/posts/_single";
+
+/**
+ * Modules : others
+ */
+@import "modules/_accessibility";
+
+@import "modules/_comments";
+
+@import "modules/_pagination";
+
+@import "modules/_widgets";
+
+
+body {
+	background-color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+	color: rgba(0,0,0, 0.8);
+	margin-top: 2rem;
+	width: 100%;
+
+	@media only screen and (max-width: 600px) {
+		margin-top: 0 !important;
+	}
+
+	.wrap {
+		@media only screen and (max-width: 600px) {
+			overflow-x: auto;
+			box-shadow: 3px 3px 4px 11px rgba(0,0,0,0.1);
+		}
+
+	table {
+		background-color: #fff;
+		max-width: 1000px;
+		margin: auto;
+		border: none !important;
+		box-shadow: 3px 3px 4px 11px rgba(0,0,255,0.1);
+	
+		@media only screen and (max-width: 600px) {
+			width: 100%;
+			border-collapse: collapse
+		}
+
+		td {
+			color: black;
+		}
+	}
+
+	thead {
+		color: blue;
+	}
+
+	tbody {
+		text-transform: uppercase;
+		
+		img {
+			height: auto;
+		}
+
+		tr {
+			transition: background-color 0.4s ease-in-out ;
+	
+			&:hover {
+				background-color: rgba(0,0,0,0.1);
+			}
+
+			td {
+				color:black;
+				cursor: pointer;
+				transition: color 0.3 ease-in-out;
+
+				&.greenColor {
+					color: #5eaf3dbd; 
+					transition: color 0.3 ease-in-out;
+
+					&:hover {
+						color: black;
+					}
+				}
+
+				&:hover {
+					color: #5eaf3dbd;
+				}
+			}
+		}
+	}
+		table, td, th {
+			border: none;
+			border-top: 2px solid #eee;
+			cursor: pointer;
+		}
+	}
+}
